@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: center;
+  color: crimson;
+}
+
+.gameBoard {
+  margin: 100px auto;
+  width: 800px;
+  height: 800px;
+  background-color: #333333;
+  border: 9px solid rebeccapurple;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  clear: left;
+}
+
+.gameBoard:hover {
+  background-color: red;
+}
+
+.endGame {
+  text-align: center;
+}
+
+button {
+  padding: 20px;
+  font-size: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 6px solid #33cc33;
+  border-radius: 3px;
+}
+
+.playerZero {
+  background-image: url("images/iconfinder_352338_exposure_zero_icon_256px.png");
+  background-color: blueviolet;
+}
+
+.playerX {
+  background-image: url("images/iconfinder_4634454_delete_interface_remove_x_x mark_icon_256px.png");
+  background-color: chartreuse;
+}
+/*# sourceMappingURL=main.css.map */
